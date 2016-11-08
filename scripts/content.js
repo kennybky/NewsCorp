@@ -2,7 +2,7 @@
 /// <reference path="jquery-3.1.1.js" />
 $(document).ready(function () {
     $.ajax({
-        url: 'content/articles.xml',
+        url: 'Content/articles.xml',
         dataType: 'xml',
         success: function (data) {
             var articles = $(data).find('article').each(function () {
